@@ -1,0 +1,7 @@
+.backgroundImage {
+  background-image: url("../assets/clone-flix.jpg");
+  opacity: 0.75;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
