@@ -1,8 +1,6 @@
 import AdvertisementBar from "@/components/general/advertisement-bar";
 import Header from "@/components/general/header";
 import MovieCarosouel from "@/components/general/movie-carosuel";
-import Topbar from "@/components/layout/topbar";
-import Image from "next/image";
 
 export default function Home() {
   return (
