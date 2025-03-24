@@ -2,6 +2,7 @@ import React from "react";
 import "../../styes/header.css";
 import Topbar from "../layout/topbar";
 import { ChevronRight } from "lucide-react";
+import Email from "./email";
 
 const Header = () => {
   return (
@@ -19,20 +20,7 @@ const Header = () => {
             memberships
           </p>
 
-          <div className="flex gap-2">
-            <input
-              type="text"
-              placeholder="Email address"
-              className="bg-[#767676] rounded-lg p-2  border text-white"
-            />
-            <button
-              className="
-            bg-red-600 p-2 px-4 rounded-lg flex gap-2"
-            >
-              Get Started
-              <ChevronRight />
-            </button>
-          </div>
+        <Email />
         </div>
       </div>
     </div>

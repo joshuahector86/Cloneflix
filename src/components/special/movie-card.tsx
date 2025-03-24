@@ -10,9 +10,9 @@ const MovieCard = () => {
         onClick={() => alert("clicked")}
         src={movieImg}
         alt="movie-card-img"
-        className="p-5 rounded-[24px] transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+        className="p-5 rounded-[24px] w-[200px] h-[250px] transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
       />
-      <div>Number</div>
+     
     </div>
   );
 };

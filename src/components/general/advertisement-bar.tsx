@@ -7,9 +7,9 @@ const AdvertisementBar = () => {
   return (
     <div
       onClick={() => alert("clicked gurl")}
-      className="grid grid-cols-12 transition-transform duration-300 hover:scale-105 "
+      className="grid grid-cols-12 transition-transform duration-300 hover:scale-105 gap-5 "
     >
-      <div className="col-span-2 place-items-center grid">
+      <div className="col-span-2 place-items-end">
         <Image src={popcornImg} alt="popcorn-img" className="w-25 rounded-md" />
       </div>
       <div className="rounded-lg bg-[#333333] hover:bg-[#222222] col-span-10 ">
