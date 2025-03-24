@@ -1,7 +1,6 @@
 import React from "react";
 import "../../styes/header.css";
 import Topbar from "../layout/topbar";
-import { ChevronRight } from "lucide-react";
 import Email from "./email";
 
 const Header = () => {
