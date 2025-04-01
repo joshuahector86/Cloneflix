@@ -7,12 +7,16 @@ const AdvertisementBar = () => {
   return (
     <div
       onClick={() => alert("clicked gurl")}
-      className="grid grid-cols-12 transition-transform duration-300 hover:scale-105 gap-5 "
+      className="grid grid-flow-row md:grid-cols-12 transition-transform duration-300 hover:scale-105 gap-5 "
     >
-      <div className="col-span-2 place-items-end">
-        <Image src={popcornImg} alt="popcorn-img" className="w-25 rounded-md" />
+      <div className="md:col-span-2 md:place-items-end place-items-center">
+        <Image
+          src={popcornImg}
+          alt="popcorn-img"
+          className="h-full rounded-md"
+        />
       </div>
-      <div className="rounded-lg bg-[#333333] hover:bg-[#222222] col-span-10 ">
+      <div className="rounded-lg bg-[#333333] hover:bg-[#222222] md:col-span-10 ">
         <div className="flex p-4 justify-between items-center">
           <div className="flex flex-col ">
             <h5>The Cloneflix you love for just $7.99</h5>

@@ -6,10 +6,10 @@ const Topbar = () => {
     alert("clicked");
   };
   return (
-    <div className="flex justify-between items-center  px-20 py-5">
+    <div className="flex justify-center md:justify-between items-center  px-20 py-5">
       <h1 className="text-5xl text-red-600 font-bold">CLONEFLIX</h1>
 
-      <div className="flex items-center space-x-5">
+      <div className=" items-center space-x-5 hidden md:flex">
         <button
           onClick={handleClick}
           className="border border-white flex items-center p-2 rounded-lg gap-4"

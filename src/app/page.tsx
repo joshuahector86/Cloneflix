@@ -12,10 +12,11 @@ export default function Home() {
       <div className="px-20 py-10 flex flex-col gap-10">
         <AdvertisementBar />
         <MovieCarosouel />
-        <InfoCards/>
-        <QuestionsAccordian/>
-
-        <Email />
+        <InfoCards />
+        <QuestionsAccordian />
+        <div className="hidden md:block">
+          <Email />
+        </div>
         <Footer />
       </div>
     </div>

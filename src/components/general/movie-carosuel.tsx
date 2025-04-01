@@ -9,6 +9,15 @@ import {
 } from "../ui/carousel";
 
 const MovieCarosouel = () => {
+  const repeatCarouselItems = 10;
+  const carouselItems = Array.from(
+    { length: repeatCarouselItems },
+    (_, index) => (
+      <CarouselItem key={index} className=" md:basis-1/2 lg:basis-1/6">
+        <MovieCard />
+      </CarouselItem>
+    )
+  );
   return (
     <div className="flex flex-col gap-4">
       <h1 className="text-2xl">Trending Now</h1>
@@ -19,26 +28,7 @@ const MovieCarosouel = () => {
         }}
         className="w-full"
       >
-        <CarouselContent >
-          <CarouselItem className=" md:basis-1/2 lg:basis-1/6">
-            <MovieCard />
-          </CarouselItem>
-          <CarouselItem className=" md:basis-1/2 lg:basis-1/6">
-            <MovieCard />
-          </CarouselItem>
-          <CarouselItem className=" md:basis-1/2 lg:basis-1/6">
-            <MovieCard />
-          </CarouselItem>
-          <CarouselItem className=" md:basis-1/2 lg:basis-1/6">
-            <MovieCard />
-          </CarouselItem>
-          <CarouselItem className=" md:basis-1/2 lg:basis-1/6">
-            <MovieCard />
-          </CarouselItem>
-          <CarouselItem className=" md:basis-1/2 lg:basis-1/6">
-            <MovieCard />
-          </CarouselItem>
-        </CarouselContent>
+        <CarouselContent>{carouselItems}</CarouselContent>
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
