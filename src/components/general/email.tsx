@@ -24,7 +24,7 @@ const Email = () => {
                 isInputString
             );
             setIsInputString("");
-          } else {
+          } else if (e.key === "Enter" && !isValidEmail) {
             alert("Please enter a valid email address.");
             setIsInputString("");
           }
